@@ -13,15 +13,10 @@ def convert_fahrenheit_to_celsius():
     print(f"The Fahrenheit temperature {fahrenheit} you entered is {celsius} is Celsius.")
 
 def main():
-    print("Enter c if you want to convert from Fahrenheit to Celsius")
-    print("Enter f if you want to convert from Celsius to Fahrenheit")
-    choice = input().strip().lower()
-    if choice == 'c':
-        convert_fahrenheit_to_celsius()
-    elif choice == 'f':
-        convert_celsius_to_fahrenheit()
-    else:
-        print("Incorrent input. Please try again later.")
+    convert_fahrenheit_to_celsius()
+    convert_celsius_to_fahrenheit()
+
+main()
 
 #テストの例
 if __name__ == "__main__":
