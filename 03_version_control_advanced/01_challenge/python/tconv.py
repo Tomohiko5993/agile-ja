@@ -12,7 +12,18 @@ def convert_fahrenheit_to_celsius():
     celsius = (5/9) * (fahrenheit - 32)
     print(f"The Fahrenheit temperature {fahrenheit} you entered is {celsius} is Celsius.")
 
+def main():
+    print("Enter c if you want to convert from Fahrenheit to Celsius")
+    print("Enter f if you want to convert from Celsius to Fahrenheit")
+    choice = input().strip().lower()
+    if choice == 'c':
+        convert_fahrenheit_to_celsius()
+    elif choice == 'f':
+        convert_celsius_to_fahrenheit()
+    else:
+        print("Incorrent input. Please try again later.")
+
 #テストの例
 if __name__ == "__main__":
-    convert_celsius_to_fahrenheit()
-    convert_fahrenheit_to_celsius()
+    main()
+
