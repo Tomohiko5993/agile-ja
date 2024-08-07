@@ -12,7 +12,13 @@ def convert_fahrenheit_to_celsius():
     celsius = (5/9) * (fahrenheit - 32)
     print(f"The Fahrenheit temperature {fahrenheit} you entered is {celsius} is Celsius.")
 
+def main():
+    convert_fahrenheit_to_celsius()
+    convert_celsius_to_fahrenheit()
+
+main()
+
 #テストの例
 if __name__ == "__main__":
-    convert_celsius_to_fahrenheit()
-    convert_fahrenheit_to_celsius()
+    main()
+
